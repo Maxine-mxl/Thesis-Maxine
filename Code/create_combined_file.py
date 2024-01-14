@@ -7,10 +7,10 @@ Created on Mon Nov  6 16:37:30 2023
 
 import pandas as pd
 
-# Load your data from a CSV file (replace 'your_data.csv' with your actual file path)
+#load your data from a CSV file
 df = pd.read_csv('homicide_contain_p.csv')
 
-# Define the columns to combine and the new column names
+#define the columns to combine and the new column names
 columns_to_combine = {
     'Orientation': ['100','101', '102', '103', '104', '105'],
     'Bibliography': ['112', '113', '114', '115', '116', '117'],
@@ -118,13 +118,13 @@ columns_to_combine = {
     'Archeological analyses': ['911']
 }
 
-# Combine the specified columns and set '1' if any column contains '1', otherwise '0'
+#combine the specified columns and set '1' if any column contains '1', otherwise set '0'
 for new_column, source_columns in columns_to_combine.items():
     df[new_column] = (df[source_columns].any(axis=1)).astype(int)
 
-# Drop the columns used for combination
+#drop the columns used for combination
 columns_to_drop = [col for cols in columns_to_combine.values() for col in cols]
 df.drop(columns=columns_to_drop, inplace=True)
 
-# Save the updated DataFrame to a new CSV file
+#save the new data file
 df.to_csv('combined_homicide_data.csv', index=False)
