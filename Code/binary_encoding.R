@@ -1,4 +1,5 @@
 #code to transform data to a binary encoded data file
+#credits to Dr. K.L. Syme
 
 hs <- read_xlsx("/location/file_name.xlsx")
 
