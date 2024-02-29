@@ -7,4 +7,6 @@ In the 'Data for analyses' folder you can find the four data files used to do th
 
 In the 'Original data' folder you can find the two original data files given at the beginning of this project. The offenses against life data file was used to create the four data files that were used to analyses with (which can be found in the 'Data for analyses' folder). 
 
-Lastly four .png files were uploaded, these are the images of the plots created when doing the cluster analyses. 
+Lastly four .png files were uploaded, these are the images of the plots created when doing the cluster analyses. A table with the frequencies of the OCM codes can be found in the OCM_codes_frequencies.xlsx file and the Google Colab Notebook used during this research was uploaded and can be found when clicking on 'Thesis_Maxine.ipynb'. 
+
+Enjoy!
